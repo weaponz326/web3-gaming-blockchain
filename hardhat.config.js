@@ -3,7 +3,7 @@ require("@nomicfoundation/hardhat-toolbox");
 
   module.exports = {
     solidity: {
-      version: "0.8.28",
+      version: "0.8.20",
       settings: {
         optimizer: {
           enabled: true,
@@ -13,12 +13,12 @@ require("@nomicfoundation/hardhat-toolbox");
     },
     networks: {
       hardhat: {},
-      polygonMumbai: {
-        url: process.env.POLYGON_MUMBAI_URL || "https://rpc-mumbai.maticvigil.com",
+      sepolia: {
+        url: process.env.SEPOLIA_URL || "https://rpc.sepolia.org",
         accounts: [process.env.PRIVATE_KEY],
       },
     },
     etherscan: {
-      apiKey: process.env.POLYGONSCAN_API_KEY,
+      apiKey: process.env.ETHERSCAN_API_KEY,
     },
   };

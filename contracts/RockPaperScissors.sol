@@ -13,11 +13,11 @@
       mapping(address => Game) public games;
       mapping(uint256 => address) public requestIdToPlayer;
 
-      // Chainlink VRF variables
+      // Chainlink VRF variables for Sepolia
       VRFCoordinatorV2Interface public COORDINATOR;
       uint64 subscriptionId;
-      address vrfCoordinator = 0xYourVRFCoordinatorAddress; // Replace with Polygon Mumbai VRF Coordinator
-      bytes32 keyHash = 0xYourKeyHash; // Replace with appropriate key hash
+      address vrfCoordinator = 0x8103B0A8A00be2DDC778e6e7eaa21791Cd364625; // Sepolia VRF Coordinator
+      bytes32 keyHash = 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c; // Sepolia key hash
       uint32 callbackGasLimit = 100000;
       uint16 requestConfirmations = 3;
       uint32 numWords = 1;
